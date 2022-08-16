@@ -2,10 +2,6 @@
     background-color: #f5f4fa;
 }
 
-.employees-list {
-    list-style: none;
-}
-
 .team-container {
     width: 1200px;
     margin-left: auto;
@@ -25,12 +21,11 @@
     text-align: center;
     margin-bottom: 50px;
 }
-
 .employees-list {
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    /* padding-bottom: 94px; */
 }
 
 .employees-card {
@@ -76,19 +71,19 @@
     border-radius: 50%;
     background-color: #ffffff;
     transition: background-color var(--transition-dur-and-fun);
-}
 
-.social-list-link:hover,
-.social-list-link:focus {
-    background-color: #2196f3;
-    /* transition: var(--transition-dur-and-fun); */
-}
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-    fill: #ffffff;
-    cursor: pointer;
-    /* transition: var(--transition-dur-and-fun); */
+    &:hover,
+    &:focus {
+        background-color: #2196f3;
+
+    }
+
+    &hover .social-list-icon,
+    &focus .social-list-icon {
+        fill: #ffffff;
+        cursor: pointer;
+    }
 }
 
 .social-list-icon {

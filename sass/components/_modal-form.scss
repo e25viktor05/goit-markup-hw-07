@@ -39,11 +39,11 @@
     padding-left: 42px;
     color: #000000;
     transition: border-color var(--transition-dur-and-fun);
-}
 
-.modal-form-input:focus {
-    border-color: var(--accent-color);
-    outline: none;
+    &:focus {
+        border-color: var(--accent-color);
+        outline: none;
+    }
 }
 
 .modal-form-input-icon {
@@ -69,15 +69,17 @@
     padding: 12px;
     transition: border-color var(--transition-dur-and-fun);
     border-radius: 4px;
-}
 
-.modal-form-message::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-}
 
-.modal-form-message:focus {
-    outline: none;
-    border-color: var(--accent-color);
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
 }
 
 .modal-form-check-desc {
@@ -85,32 +87,31 @@
     align-items: center;
     font-size: 14px;
     margin-bottom: 30px;
-}
 
-.modal-form-check-desc::before {
-    content: '';
-    display: block;
-    width: 16px;
-    height: 15px;
-    border: 1px solid #212121;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-right: 7px;
-}
+    &::before {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 15px;
+        border: 1px solid #212121;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-right: 7px;
 
-.modal-form-check:checked+.modal-form-check-desc::before {
-    background-color: var(--accent-color);
-    background-image: url(../images/modal-window/Vector.png);
-    background-origin: border-box;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-}
+        .modal-form-check:checked+&::before {
+            background-color: var(--accent-color);
+            background-image: url(../images/modal-window/Vector.png);
+            background-origin: border-box;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+        }
 
-.modal-form-check:focus+.modal-form-check-desc::before {
-    outline: var(--accent-color);
+        .modal-form-check:focus+&::before {
+            outline: var(--accent-color);
+        }
+    }
 }
-
 .modal-form-submit {
     align-self: center;
     min-width: 150px;
@@ -124,11 +125,11 @@
     border: none;
     transition: var(--transition-dur-and-fun);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
 
-.modal-form-submit:focus {
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:focus {
+        background-color: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }
 
 .agree-to-subscription {

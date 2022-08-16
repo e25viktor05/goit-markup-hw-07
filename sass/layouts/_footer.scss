@@ -30,12 +30,13 @@
     letter-spacing: 0.03em;
     color: #ffffff;
     transition: color var(--transition-dur-and-fun), background var(--transition-dur-and-fun);
-}
 
-.contacts:hover,
-.contacts:focus {
-    color: var(--accent-color);
-    transition: var(--transition-dur-and-fun);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        transition: var(--transition-dur-and-fun);
+    }
 }
 
 .logo-color-footer {
@@ -49,12 +50,13 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--transition-dur-and-fun), background var(--transition-dur-and-fun);
-}
 
-.contact-detail:hover,
-.contact-detail:focus {
-    color: var(--accent-color);
-    transition: var(--transition-dur-and-fun);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        transition: var(--transition-dur-and-fun);
+    }
 }
 
 .footer-color {
@@ -96,16 +98,17 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background var(--transition-dur-and-fun);
+
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        transition: var(--transition-dur-and-fun);
+    }
 }
 
 .footer-social-list-icon {
     fill: #ffffff;
-}
-
-.footer-social-list-link:hover,
-.footer-social-list-link:focus {
-    background-color: var(--accent-color);
-    transition: var(--transition-dur-and-fun);
 }
 
 .footer-subscribe-to-newsletter {

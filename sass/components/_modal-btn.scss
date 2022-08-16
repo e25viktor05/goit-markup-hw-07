@@ -14,12 +14,12 @@
     margin-top: 30px;
     transition: var(--transition-dur-and-fun);
     border: none;
-}
 
-.modal-btn:hover,
-.modal-btn:focus {
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    transition: var(--transition-dur-and-fun);
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        transition: var(--transition-dur-and-fun);
+    }
 }

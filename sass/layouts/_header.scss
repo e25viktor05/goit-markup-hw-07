@@ -52,12 +52,13 @@
     letter-spacing: 0.02em;
     color: #212121;
     transition: color var(--transition-dur-and-fun);
-}
 
-.menu-link:hover,
-.menu-link:focus {
-    color: var(--accent-color);
-    transition: color var(--transition-dur-and-fun);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        transition: color var(--transition-dur-and-fun);
+    }
 }
 
 .current {
@@ -71,12 +72,12 @@
     letter-spacing: 0.02em;
     color: #757575;
     transition: color var(--transition-dur-and-fun);
-}
 
-.contact-email:hover,
-.contact-email:focus {
-    color: var(--accent-color);
-    
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .contact-phone-number {
@@ -86,12 +87,13 @@
     color: #757575;
     padding-right: 15px;
     transition: color var(--transition-dur-and-fun);
-}
 
-.contact-phone-number:hover,
-.contact-phone-number:focus {
-    color: var(--accent-color);
-    transition: color var(--transition-dur-and-fun);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        transition: color var(--transition-dur-and-fun);
+    }
 }
 
 .social-list-icons {
@@ -99,6 +101,13 @@
     margin-right: 10px;
     fill: currentColor;
     transition: color var(--transition-dur-and-fun);
+
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        transition: color var(--transition-dur-and-fun);
+    }
 }
 
 .social-list-item {
@@ -106,13 +115,6 @@
     width: 44px;
     height: 44px;
 }
-
-.social-list-icons:hover,
-.social-list-icons:focus {
-    fill: var(--accent-color);
-    transition: color var(--transition-dur-and-fun);
-}
-
 .studio::after {
     display: block;
     width: 48px;
