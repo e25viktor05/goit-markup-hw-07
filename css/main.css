@@ -117,6 +117,12 @@ body {
   color: #000000;
 }
 
+.pagenav__list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -125,6 +131,11 @@ body {
 
 .menu-link.current {
   color: var(--accent-color);
+}
+
+.pagenav__item:not(:last-child) {
+  margin-right: 50px;
+  align-items: center;
 }
 
 .menu__item:not(:last-child) {
